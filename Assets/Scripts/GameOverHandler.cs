@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -29,6 +30,7 @@ public class GameOverHandler : MonoBehaviour
 
     public void ContinueButton()
     {
+        AdManager.Instance.ShowAd(this);
         continueButton.interactable = false;
     }
 
@@ -50,4 +52,5 @@ public class GameOverHandler : MonoBehaviour
         gameOverDisplay.gameObject.SetActive(false);
     }
 }
+
 

@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -12,7 +14,9 @@ public class ScoreSystem : MonoBehaviour
     void Update()
     {
         if (!shouldCount) { return; }
+
         score += Time.deltaTime * scoreMultiplier;
+
         scoreText.text = Mathf.FloorToInt(score).ToString();
     }
 
@@ -24,9 +28,10 @@ public class ScoreSystem : MonoBehaviour
     public int EndTimer()
     {
         shouldCount = false;
+
         scoreText.text = string.Empty;
+
         return Mathf.FloorToInt(score);
     }
 }
-
 
