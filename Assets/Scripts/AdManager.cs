@@ -32,7 +32,8 @@ public class AdManager : MonoBehaviour, IUnityAdsInitializationListener, IUnityA
 
     public void OnInitializationComplete()
     {
-        Debug.Log("Unity Ads initialization complete.");
+        Debug.Log("Unity Ads initialization complete");
+        Advertisement.Load("rewardedVideo", this);
     }
 
     public void OnInitializationFailed(UnityAdsInitializationError error, string message)

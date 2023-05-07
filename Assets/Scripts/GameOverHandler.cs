@@ -8,6 +8,7 @@ public class GameOverHandler : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private Button continueButton;
+    [SerializeField] private TMP_Text continueButtonText;
     [SerializeField] private TMP_Text gameOverText;
     [SerializeField] private ScoreSystem scoreSystem;
     [SerializeField] private GameObject gameOverDisplay;
@@ -32,6 +33,7 @@ public class GameOverHandler : MonoBehaviour
     {
         AdManager.Instance.ShowAd(this);
         continueButton.interactable = false;
+        continueButtonText.text = "Yeah Nah";
     }
 
     public void ReturnToMenu()

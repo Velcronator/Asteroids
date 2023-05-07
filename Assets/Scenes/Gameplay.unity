@@ -188,7 +188,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.039215688, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 0.043137256, g: 0, b: 0, a: 1}
     m_SelectedColor: {r: 0.039215688, g: 0, b: 0, a: 1}
-    m_DisabledColor: {r: 0.039215688, g: 0, b: 0, a: 0.5019608}
+    m_DisabledColor: {r: 0.039215688, g: 0, b: 0, a: 0.15294118}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 361842522}
         m_TargetAssemblyTypeName: GameOverHandler, Assembly-CSharp
-        m_MethodName: ContinueGame
+        m_MethodName: ContinueButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -613,6 +613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 344251206}
   continueButton: {fileID: 42515837}
+  continueButtonText: {fileID: 490504709}
   gameOverText: {fileID: 1389241104}
   scoreSystem: {fileID: 1385345223}
   gameOverDisplay: {fileID: 1631802598}
